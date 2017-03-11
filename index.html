@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <link rel="stylesheet" type="text/css" href="common.min.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJPIfOnMlfar9SMzh0aZbzMmYKFiF3S6Q"></script>
@@ -15,20 +15,20 @@
 	<form target="remember" method="post" action="remember.html">
 	  <div id="inputs">
 	    <div class="form">
-	      <label>Startpunkt:</label><input type="text" id="startpoint" value="Freiburg">
-	      <label>Endpunkt:</label><span id="swap">&uarr;&darr;</span><input type="text" id="endpoint" autocomplete="on">
+	      <label id="label-startpoint">Startpunkt:</label><input type="text" id="startpoint" value="Freiburg">
+	      <label id="label-endpoint">Endpunkt:</label><span id="swap">&uarr;&darr;</span><input type="text" id="endpoint" autocomplete="on">
 	    </div>
 	    <div class="form">
-	      <label>Verbrauch: (L/100km)</label><input type="number" id="consumption" value="7" step="0.1">
-	      <label>Spritpreis: (€/L)</label><input type="number" id="price" value="1.30" step="0.1">
+	      <label id="label-consumption">Verbrauch: (L/100km)</label><input type="number" id="consumption" value="7" step="0.1" min="0.1" max="100.00">
+	      <label id="label-price">Spritpreis: (€/L)</label><input type="number" id="price" value="1.30" step="0.01" min="0.01" max="2.00">
 	    </div>
 	    <div class="form">
-	      <label>Hin- und Rückweg:</label><input type="checkbox" id="return-check" checked="true">
+	      <label id="label-return">Hin- und Rückweg:</label><input type="checkbox" id="return-check" checked="true">
 	      
 	    </div>
 	    <div class="form">
-	      <label>Distanz: (km)</label><input class="result" type="number" id="result-kilometers" readonly="true">
-	      <label>Kosten: (€)</label><input class="result" type="number" id="result-costs" readonly="true">
+	      <label id="label-distance">Distanz: (km)</label><input class="result" type="number" id="result-kilometers" readonly="true">
+	      <label id="label-costs">Kosten: (€)</label><input class="result" type="number" id="result-costs" readonly="true">
 	    </div>
 	  </div>
 	  <div class="clearfix"></div>
@@ -40,6 +40,6 @@
       <div id="notice">Made By Nils Schwabe &copy; 2017</div>
     </div>
     <footer></footer>
-    <script type="text/javascript" src="script.min.js"></script>  
+    <script type="text/javascript" src="script.js"></script>  
   </body>
 </html>
