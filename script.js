@@ -20,7 +20,7 @@ function calc(showErrors) {
     if (startpoint == "" || endpoint == "") {
         displayInfo("");
         if (showErrors)
-            displayError("Start- und Endpunkt müssen ausgefüllt sein.");
+            displayError("Start- und Endpunkt müssen ausgefüllt sein");
         return;
     }
     
@@ -66,10 +66,6 @@ function initMap() {
 document.getElementById("calc-button").onclick = function() {calc(true)};
 document.getElementById("consumption").onfocus = function() {calc(false)};
 document.getElementById("return-check").onclick = function() {calc(false)};
-/*document.onkeypress = function(e) {
-    if (e.keyCode == 13)
-        calc(true);
-};*/
 document.getElementById("swap").onclick = function() {
     var startpoint = document.getElementById("startpoint");
     var endpoint = document.getElementById("endpoint");
@@ -77,5 +73,6 @@ document.getElementById("swap").onclick = function() {
     startpoint.value = endpoint.value;
     endpoint.value = tmp;
 };
+
 var map, directionsDisplay;
 google.maps.event.addDomListener(window, 'load', initMap);
