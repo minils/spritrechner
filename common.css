@@ -73,7 +73,9 @@ h1 {
 
 #title {
     padding-left: 35px;
-    background: url(car.svg) no-repeat center left;
+    background: url(car.png) no-repeat center left;
+    background-size: 24px 24px;
+    background-image: url(car.svg);
 }
 
 #inputs {
