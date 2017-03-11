@@ -1,0 +1,134 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    background-color: #ddd;
+}
+
+header,footer {
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+#text {
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    flex: 1;
+    padding-right: 3em;
+    min-width: 190px;
+}
+
+label {
+}
+
+input {
+    margin-top: 0.5em;
+    margin-bottom: 1.2em;
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+input[type=checkbox] {
+    width: auto;
+}
+
+button {
+    margin-top: 1em;
+    line-height: 1.6em;
+    font-size: 1em;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#error {
+    margin-left: 2em;
+    padding: 5px 17px 5px 17px;
+    border-radius: 5px;
+}
+
+#swap {
+    cursor: pointer;
+    float: right;
+}
+
+#map {
+    height: 400px;
+    margin-top: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+#notice {
+    text-align: center;
+    font-size: 0.6em;
+    padding-bottom: 1em;
+}
