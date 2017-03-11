@@ -93,6 +93,23 @@ input {
     font-size: 1em;
 }
 
+input[type=text],input[type=number] {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+/* BEGIN: Remove arrows of input[type=number] */
+input::-webkit-outer-spin-button.result,
+input::-webkit-inner-spin-button.result {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number].result {
+    -moz-appearance: textfield;
+}
+/* END: Remove arrows of input[type=number] */
+
 input[type=checkbox] {
     width: auto;
 }
