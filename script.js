@@ -31,7 +31,6 @@ function calc(showErrors) {
     };
 
     directionsService.route(request, function(response, status) {
-	console.log(status);
         if ( status == google.maps.DirectionsStatus.OK ) {
             var distance = response.routes[0].legs[0].distance.value
             if (document.getElementById("return-check").checked) {
